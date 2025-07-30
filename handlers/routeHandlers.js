@@ -1,10 +1,10 @@
-import { getData } from '../utils/getData.js';
-import { parseJSONBody } from '../utils/parseJSONBody.js';
-import { sendResponse } from '../utils/sendResponse.js';
-import { addNewSighting } from '../utils/addNewSighting.js';
-import { sanitizeIncomingHtml } from '../utils/sanitizeIncomingData.js';
-import { sightingEvents } from '../events/sightingEvents.js';
-import { stories } from '../data/stories.js';
+import { getData } from '../../utils/getData.js';
+import { parseJSONBody } from '../../utils/parseJSONBody.js';
+import { sendResponse } from '../../utils/sendResponse.js';
+import { addNewSighting } from '../../utils/addNewSighting.js';
+import { sanitizeIncomingHtml } from '../../utils/sanitizeIncomingData.js';
+import { sightingEvents } from '../../events/sightingEvents.js';
+import { stories } from '../../data/stories.js';
 
 export async function handleGet(res) {
     const data = await getData();

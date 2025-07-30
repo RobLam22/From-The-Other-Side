@@ -1,6 +1,10 @@
 import { createServer } from 'node:http';
 import { serveStatic } from './utils/serveStatic.js';
-import { handleGet, handlePost, handleNews } from './handlers/routeHandlers.js';
+import {
+    handleGet,
+    handlePost,
+    handleNews,
+} from '../handlers/routeHandlers.js';
 
 const PORT = 8000;
 
